@@ -17,7 +17,7 @@ import java.net.Socket;
  * @since : 0.1.0
  **/
 
-public class MessageEnvironmentFormController {
+public class MessageEnvironmentFormController extends Thread{
     
     public Label lblContactName;
     public TextArea txtArea;
