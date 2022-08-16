@@ -5,8 +5,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.io.IOException;
-
 /**
  * @author : Kavishka Prabath
  * @since : 0.1.0
@@ -14,16 +12,16 @@ import java.io.IOException;
 
 public class AppInitializer extends Application {
 
-    public static void main(String[] args) {
-        launch(args);
-    }
-
     @Override
-    public void start(Stage primaryStage) throws IOException {
-        primaryStage.setScene(new Scene(FXMLLoader.load(this.getClass().getResource("view/ClientLoginForm.fxml"))));
+    public void start(Stage primaryStage) throws Exception {
+        primaryStage.setScene(new Scene(FXMLLoader.load(this.getClass().getResource("../view/ClientLoginForm.fxml"))));
         primaryStage.setTitle("Messenger");
         primaryStage.setResizable(false);
         primaryStage.show();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
     }
 
 }

@@ -18,31 +18,34 @@ public class ClientLoginFormController {
     public AnchorPane mainRoot;
     public TextField txtName;
 
+    public String name;
+
     public static String userName;
 
     public static ArrayList<String> users = new ArrayList<>();
 
     public void continueBtnOnAction(ActionEvent actionEvent) throws IOException {
-
         userName = txtName.getText().trim();
-        boolean isAdd = false;
+        boolean flag = false;
         if(users.isEmpty()){
             users.add(userName);
-            isAdd = true;
+            flag = true;
         }
 
         for(String s : users){
             if (!s.equalsIgnoreCase(userName)) {
-                isAdd = true;
+                flag = true;
                 System.out.println(userName);
                 break;
             }
         }
 
-        if(isAdd){
+        if(flag){
             this.mainRoot.getChildren().clear();
-            this.mainRoot.getChildren().add(FXMLLoader.load(this.getClass().getResource("../view/MessageEnvironmentForm.fxml")));
+            this.mainRoot.getChildren().add(FXMLLoader.load(this.getClass().
+                    getResource("../view/MessageEnvironmentForm.fxml")));
         }
 
     }
+
 }
