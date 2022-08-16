@@ -6,6 +6,11 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.ArrayList;
 
+/**
+ * @author : Kavishka Prabath
+ * @since : 0.1.0
+ **/
+
 public class ServerThread extends Thread{
     private Socket socket;
     private ArrayList<ServerThread> threadArrayList;
