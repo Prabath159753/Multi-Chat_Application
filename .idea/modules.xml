@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Command_Line Multi-Chat Application/Command_Line Multi-Chat Application.iml" filepath="$PROJECT_DIR$/Command_Line Multi-Chat Application/Command_Line Multi-Chat Application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Multi-Chat_Application.iml" filepath="$PROJECT_DIR$/.idea/Multi-Chat_Application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/User-Interface Multi-Chat_Application/User-Interface Multi-Chat_Application.iml" filepath="$PROJECT_DIR$/User-Interface Multi-Chat_Application/User-Interface Multi-Chat_Application.iml" />
+    </modules>
+  </component>
+</project>
