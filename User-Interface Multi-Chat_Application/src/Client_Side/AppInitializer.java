@@ -7,6 +7,11 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/**
+ * @author : Kavishka Prabath
+ * @since : 0.1.0
+ **/
+
 public class AppInitializer extends Application {
 
     public static void main(String[] args) {
